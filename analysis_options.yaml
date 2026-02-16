@@ -1,0 +1,8 @@
+# File: analysis_options.yaml
+# File Version: 1.0.0
+# Copyright (c) 2026 App Scaffolding Contributors
+
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
