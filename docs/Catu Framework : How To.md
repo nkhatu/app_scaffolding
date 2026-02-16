@@ -1,5 +1,5 @@
 <!--
-File: docs/CATU_FRAMEWORK_HOWTO.md
+File: docs/Catu Framework : How To.md
 File Version: 1.1.0
 Framework : Core App Tech Utilities (Catu) Framework
 Author: Neil Khatu
@@ -8,7 +8,7 @@ Copyright (c) 2026 Catu Framework
 
 # Catu Framework Wiring Guide
 
-For DI-first setup details: `docs/document.md`
+For DI-first setup details: `docs/Dependency Injection.md`
 
 This guide explains **where each framework concern lives** and **how to wire it** into a real app.
 

@@ -24,8 +24,8 @@ Reusable Flutter framework scaffold based on the architecture used in `app_scaff
 
 ## Wiring Guide
 
-- Detailed setup and integration guide: `docs/CATU_FRAMEWORK_HOWTO.md`
-- Dependency injection guide: `docs/document.md`
+- Detailed setup and integration guide: `docs/Catu Framework : How To.md`
+- Dependency injection guide: `docs/Dependency Injection.md`
 - Firebase auth adapter example: `docs/examples/firebase_auth_service.example.dart`
 
 ## Quick start
