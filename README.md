@@ -1,7 +1,7 @@
 <!--
 File: README.md
-File Version: 1.0.0
-Copyright (c) 2026 App Scaffolding Contributors
+File Version: 1.1.0
+Copyright (c) 2026 The Khatu Family Trust
 -->
 
 # app_scaffolding
@@ -39,10 +39,10 @@ void main() {
 
   final auth = InMemoryAuthService(
     users: {
-      'demo@kart.app': 'demo123',
-      'admin@kart.app': 'admin123',
+      'demo@catu.app': 'demo123',
+      'admin@catu.app': 'admin123',
     },
-    adminEmail: 'admin@kart.app',
+    adminEmail: 'admin@catu.app',
   );
 
   final analytics = InMemoryCrashAnalyticsService();
@@ -55,7 +55,7 @@ void main() {
         appName: 'Catu Framework',
         appVersion: '0.1.1',
         appBuild: '31',
-        supportEmail: 'support@kart.app',
+        supportEmail: 'support@catu.app',
         copyrightNotice: 'Copyright © 2026 Catu Framework',
       ),
     ),
@@ -83,3 +83,35 @@ To apply these icons to a Flutter app (with Android and iOS folders), run:
 - Replace or wrap `InMemoryCrashAnalyticsService` with Firebase Crashlytics or your telemetry provider.
 - Replace placeholder legal/support text with your own content.
 - Extend settings/menu/routes with your app-specific pages.
+
+## License
+
+This repository is licensed under **Apache-2.0**.
+
+- License file: `LICENSE`
+- Copyright (c) 2026 The Khatu Family Trust
+
+## SPDX Header Pattern
+
+Use the following SPDX pattern in new files.
+
+Dart (`.dart`):
+
+```dart
+/// SPDX-License-Identifier: Apache-2.0
+/// Copyright (c) 2026 The Khatu Family Trust
+```
+
+YAML/Shell (`.yaml`, `.yml`, `.sh`):
+
+```text
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (c) 2026 The Khatu Family Trust
+```
+
+Markdown (`.md`):
+
+```markdown
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 The Khatu Family Trust -->
+```
