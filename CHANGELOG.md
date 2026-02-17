@@ -1,7 +1,9 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 The Khatu Family Trust -->
 <!--
 File: CHANGELOG.md
 File Version: 1.0.0
-Copyright (c) 2026 App Scaffolding Contributors
+Copyright (c) 2026 The Khatu Family Trust
 -->
 
 ## 0.0.1

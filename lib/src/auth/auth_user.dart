@@ -1,3 +1,5 @@
+/// SPDX-License-Identifier: Apache-2.0
+/// Copyright (c) 2026 The Khatu Family Trust
 /// ---------------------------------------------------------------------------
 /// lib/src/auth/auth_user.dart
 /// ---------------------------------------------------------------------------
@@ -9,7 +11,6 @@
 /// File Version: 1.0.0
 /// Framework : Core App Tech Utilities (Catu) Framework
 /// Author: Neil Khatu
-/// Copyright (c) (2017 : 2026) The Khatu Family Trust
 ///
 
 library;

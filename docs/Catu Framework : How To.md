@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 The Khatu Family Trust -->
 <!--
 File: docs/Catu Framework : How To.md
 File Version: 1.1.0
 Framework : Core App Tech Utilities (Catu) Framework
 Author: Neil Khatu
-Copyright (c) 2026 Catu Framework
+Copyright (c) 2026 The Khatu Family Trust
 -->
 
 # Catu Framework Wiring Guide

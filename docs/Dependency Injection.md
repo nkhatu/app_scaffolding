@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright (c) 2026 The Khatu Family Trust -->
 <!--
 File: docs/Dependency Injection.md
 File Version: 1.0.0
 Framework : Core App Tech Utilities (Catu) Framework
 Author: Neil Khatu
-Copyright (c) 2026 Catu Framework
+Copyright (c) 2026 The Khatu Family Trust
 -->
 
 # Dependency Injection in Catu Framework
