@@ -6,7 +6,7 @@ File Version: 1.3.0
 Copyright (c) 2026 The Khatu Family Trust
 -->
 
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_new.png)
 
 # Core Application Technology Utility (Catu) Framework
 
@@ -188,7 +188,7 @@ This sequence helps beginners understand that Flutter apps are not just UI widge
 
 Source artwork for all icon sets:
 
-- `assets/Catu_Square_1024.png`
+- `assets/catu_new.png`
 
 Generated icon sets committed in this repository:
 

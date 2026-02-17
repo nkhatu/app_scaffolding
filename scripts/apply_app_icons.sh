@@ -3,7 +3,7 @@
 # Copyright (c) 2026 The Khatu Family Trust
 # -----------------------------------------------------------------------------
 # File: scripts/apply_app_icons.sh
-# File Version: 1.0.0
+# File Version: 1.2.0
 # Framework : Core App Tech Utilities (Catu) Framework
 # Author: Neil Khatu
 # -----------------------------------------------------------------------------
@@ -37,6 +37,10 @@ for dpi in mdpi hdpi xhdpi xxhdpi xxxhdpi; do
   mkdir -p "$ANDROID_DST/mipmap-$dpi"
   cp "$ICON_ROOT/android/mipmap-$dpi/ic_launcher.png" \
     "$ANDROID_DST/mipmap-$dpi/ic_launcher.png"
+  if [[ -f "$ICON_ROOT/android/mipmap-$dpi/ic_launcher_round.png" ]]; then
+    cp "$ICON_ROOT/android/mipmap-$dpi/ic_launcher_round.png" \
+      "$ANDROID_DST/mipmap-$dpi/ic_launcher_round.png"
+  fi
 done
 
 echo "Applying iOS app icons..."

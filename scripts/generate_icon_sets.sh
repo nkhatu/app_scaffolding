@@ -3,7 +3,7 @@
 # Copyright (c) 2026 The Khatu Family Trust
 # -----------------------------------------------------------------------------
 # File: scripts/generate_icon_sets.sh
-# File Version: 1.0.0
+# File Version: 1.2.0
 # Framework : Core App Tech Utilities (Catu) Framework
 # Author: Neil Khatu
 # -----------------------------------------------------------------------------
@@ -12,7 +12,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-SOURCE_ICON="$ROOT_DIR/assets/Catu_Square_1024.png"
+SOURCE_ICON="$ROOT_DIR/assets/catu_new.png"
 
 if [[ ! -f "$SOURCE_ICON" ]]; then
   echo "Source icon not found: $SOURCE_ICON"
@@ -36,6 +36,7 @@ generate_android_set() {
   local root="$1"
   while read -r dpi size; do
     resize_icon "$size" "$root/mipmap-$dpi/ic_launcher.png"
+    resize_icon "$size" "$root/mipmap-$dpi/ic_launcher_round.png"
   done <<'ICON_SIZES'
 mdpi 48
 hdpi 72

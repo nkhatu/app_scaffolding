@@ -8,7 +8,7 @@
 /// - Defines home page module.
 /// Architecture:
 /// - Layered Flutter architecture with explicit UI/state/service boundaries.
-/// File Version: 1.0.0
+/// File Version: 1.2.0
 /// Framework : Core App Tech Utilities (Catu) Framework
 /// Author: Neil Khatu
 ///
@@ -39,12 +39,19 @@ class HomePage extends StatelessWidget {
           child: ListView(
             padding: const EdgeInsets.all(20),
             children: [
-              Image.asset(
-                'assets/catu_framework.png',
-                package: 'catu_framework',
-                width: 220,
-                height: 220,
-                fit: BoxFit.contain,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(18),
+                child: AspectRatio(
+                  aspectRatio: 3 / 2,
+                  child: ColoredBox(
+                    color: Colors.white,
+                    child: Image.asset(
+                      'assets/catu_new.png',
+                      package: 'catu_framework',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(height: 12),
               Text(

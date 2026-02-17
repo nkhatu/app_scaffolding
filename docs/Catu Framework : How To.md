@@ -8,7 +8,7 @@ Author: Neil Khatu
 Copyright (c) 2026 The Khatu Family Trust
 -->
 
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_new.png)
 
 # Catu Framework Wiring Guide
 
@@ -186,7 +186,7 @@ Production expectation:
 ## Icons and Branding
 
 Source image for icon generation:
-- `assets/Catu_Square_1024.png`
+- `assets/catu_new.png`
 
 Regenerate all committed Android/iOS icon sets:
 ```bash
