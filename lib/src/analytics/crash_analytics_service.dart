@@ -87,8 +87,16 @@ class InMemoryCrashAnalyticsService implements CrashAnalyticsService {
 }
 
 void installCrashAnalyticsHandlers(CrashAnalyticsService analytics) {
+  final previousFlutterErrorHandler = FlutterError.onError;
+  final previousPlatformErrorHandler =
+      WidgetsBinding.instance.platformDispatcher.onError;
+
   FlutterError.onError = (details) {
-    FlutterError.presentError(details);
+    if (previousFlutterErrorHandler != null) {
+      previousFlutterErrorHandler(details);
+    } else {
+      FlutterError.presentError(details);
+    }
     analytics.recordError(
       details.exception,
       details.stack ?? StackTrace.current,
@@ -98,6 +106,9 @@ void installCrashAnalyticsHandlers(CrashAnalyticsService analytics) {
 
   WidgetsBinding.instance.platformDispatcher.onError = (error, stackTrace) {
     analytics.recordError(error, stackTrace, reason: 'platform_error');
+    if (previousPlatformErrorHandler != null) {
+      return previousPlatformErrorHandler(error, stackTrace);
+    }
     return true;
   };
 }

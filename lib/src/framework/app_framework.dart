@@ -64,7 +64,7 @@ class AppFrameworkApp extends StatefulWidget {
              analytics: analytics,
            );
 
-  AppFrameworkApp.withDependencies({
+  const AppFrameworkApp.withDependencies({
     super.key,
     required this.dependencies,
     required this.config,

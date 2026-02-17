@@ -23,12 +23,14 @@ class InMemoryAuthService implements AuthService {
     required Map<String, String> users,
     String adminEmail = '',
     this.enableSocialSignIn = true,
+    this.allowImplicitAccountCreation = false,
   }) : _users = Map<String, String>.from(users),
        _adminEmail = adminEmail.trim().toLowerCase();
 
   final Map<String, String> _users;
   final String _adminEmail;
   final bool enableSocialSignIn;
+  final bool allowImplicitAccountCreation;
   AuthUser? _activeUser;
 
   @override
@@ -49,8 +51,15 @@ class InMemoryAuthService implements AuthService {
       throw const AuthException('Password is required.');
     }
 
-    // Demo behavior: treat validated credentials as authenticated.
-    _users.putIfAbsent(normalizedEmail, () => normalizedPassword);
+    final storedPassword = _users[normalizedEmail];
+    if (storedPassword == null) {
+      if (!allowImplicitAccountCreation) {
+        throw const AuthException('Account does not exist.');
+      }
+      _users[normalizedEmail] = normalizedPassword;
+    } else if (storedPassword != normalizedPassword) {
+      throw const AuthException('Invalid credentials.');
+    }
 
     final user = AuthUser(
       id: normalizedEmail,

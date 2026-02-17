@@ -225,7 +225,7 @@ class _SignInPageState extends State<SignInPage> {
                               ],
                             ),
                             Text(
-                              'Demo mode: any valid User ID and Password are accepted.',
+                              'Demo mode: use seeded credentials or create an account.',
                               style: Theme.of(context).textTheme.bodySmall,
                               textAlign: TextAlign.center,
                             ),

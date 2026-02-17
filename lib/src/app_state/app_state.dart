@@ -135,6 +135,9 @@ class AppState extends ChangeNotifier {
     try {
       await _authService.signOut();
       _analytics.logEvent('sign_out');
+    } catch (error, stackTrace) {
+      _analytics.logWarning('sign_out_failed: $error');
+      _analytics.recordError(error, stackTrace, reason: 'sign_out_failed');
     } finally {
       _user = null;
       _signInError = null;
