@@ -21,8 +21,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app_theme.dart';
 
 class ThemeController extends ChangeNotifier {
-  static const _guestThemeKey = 'app_scaffold_theme_guest';
-  static const _userThemePrefix = 'app_scaffold_theme_user_';
+  static const _guestThemeKey = 'catu_framework_theme_guest';
+  static const _userThemePrefix = 'catu_framework_theme_user_';
 
   AppThemeVariant _variant = AppThemeVariant.purple;
   String? _activeUserId;

@@ -5,7 +5,7 @@
 /// ---------------------------------------------------------------------------
 ///
 /// Purpose:
-/// - Copy/paste example of wiring Firebase Auth to app_scaffolding AuthService.
+/// - Copy/paste example of wiring Firebase Auth to catu_framework AuthService.
 /// Architecture:
 /// - App-layer adapter implementation; keeps framework package provider-agnostic.
 /// File Version: 1.0.0
@@ -13,7 +13,7 @@
 /// Author: Neil Khatu
 ///
 
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';

@@ -3,10 +3,10 @@
 # File: pubspec.yaml
 # File Version: 1.0.0
 
-name: app_scaffolding
+name: catu_framework
 description: "Reusable Flutter app scaffolding based on a shared app architecture."
 version: 0.0.1
-homepage: https://example.com/app_scaffolding
+homepage: https://example.com/catu_framework
 
 environment:
   sdk: ^3.10.8

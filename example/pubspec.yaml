@@ -3,8 +3,8 @@
 # File: example/pubspec.yaml
 # File Version: 1.0.0
 
-name: app_scaffolding_example
-description: Example app for app_scaffolding
+name: catu_framework_example
+description: Example app for catu_framework
 publish_to: 'none'
 version: 0.1.1+1
 
@@ -14,7 +14,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  app_scaffolding:
+  catu_framework:
     path: ../
 
 dev_dependencies:

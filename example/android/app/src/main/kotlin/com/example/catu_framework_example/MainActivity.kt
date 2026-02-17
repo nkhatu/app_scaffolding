@@ -1,4 +1,4 @@
-package com.example.app_scaffolding_example
+package com.example.catu_framework_example
 
 import io.flutter.embedding.android.FlutterActivity
 

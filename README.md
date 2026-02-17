@@ -6,11 +6,11 @@ File Version: 1.1.0
 Copyright (c) 2026 The Khatu Family Trust
 -->
 
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/app_scaffolding/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
 
-# app_scaffolding
+# catu_framework
 
-Reusable Flutter framework scaffold based on the architecture used in `app_scaffolding_source`.
+Reusable Flutter framework scaffold based on the architecture used in `catu_framework_source`.
 
 ## Included framework modules
 
@@ -36,7 +36,7 @@ Reusable Flutter framework scaffold based on the architecture used in `app_scaff
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

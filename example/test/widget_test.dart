@@ -15,7 +15,7 @@
 
 library;
 
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
 

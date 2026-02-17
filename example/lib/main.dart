@@ -16,7 +16,7 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

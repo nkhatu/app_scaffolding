@@ -8,11 +8,11 @@ Author: Neil Khatu
 Copyright (c) 2026 The Khatu Family Trust
 -->
 
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/app_scaffolding/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
 
 # Dependency Injection in Catu Framework
 
-This document explains how dependency injection works in `app_scaffolding` and how to wire it.
+This document explains how dependency injection works in `catu_framework` and how to wire it.
 
 ## What Was Introduced
 
@@ -58,7 +58,7 @@ AppFrameworkApp.withDependencies(
 ## Example: Default DI Wiring
 
 ```dart
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -89,7 +89,7 @@ void main() {
 Use this when you need specialized `AppState` or `ThemeController` behavior.
 
 ```dart
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 
 final dependencies = AppFrameworkDependencies(
   authService: myAuthService,
@@ -136,7 +136,7 @@ Reference adapter sample:
 - Framework composition root:
   - `lib/src/framework/app_framework.dart`
 - Public export:
-  - `lib/app_scaffolding.dart`
+  - `lib/catu_framework.dart`
 
 ## Verification
 

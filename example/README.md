@@ -1,8 +1,8 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- Copyright (c) 2026 The Khatu Family Trust -->
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/app_scaffolding/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
 
-# app_scaffolding_example
+# catu_framework_example
 
 A new Flutter project.
 

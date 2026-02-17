@@ -1,7 +1,7 @@
 /// SPDX-License-Identifier: Apache-2.0
 /// Copyright (c) 2026 The Khatu Family Trust
 /// ---------------------------------------------------------------------------
-/// lib/app_scaffolding.dart
+/// lib/catu_framework.dart
 /// ---------------------------------------------------------------------------
 ///
 /// Purpose:

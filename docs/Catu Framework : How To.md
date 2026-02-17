@@ -8,7 +8,7 @@ Author: Neil Khatu
 Copyright (c) 2026 The Khatu Family Trust
 -->
 
-![Catu Framework](https://raw.githubusercontent.com/nkhatu/app_scaffolding/main/assets/catu_framework.png)
+![Catu Framework](https://raw.githubusercontent.com/nkhatu/catu_framework/main/assets/catu_framework.png)
 
 # Catu Framework Wiring Guide
 
@@ -37,7 +37,7 @@ Use `AppFrameworkApp` as your composition root.
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -74,8 +74,8 @@ void main() {
 - Persistence: `ThemeController` in `lib/src/theme/theme_controller.dart`
 
 How it works:
-- Guest preference key: `app_scaffold_theme_guest`
-- Signed-in preference key: `app_scaffold_theme_user_<userId>`
+- Guest preference key: `catu_framework_theme_guest`
+- Signed-in preference key: `catu_framework_theme_user_<userId>`
 - `AppFrameworkApp` syncs the active user ID into `ThemeController` automatically.
 
 ### 2. Sign-in / Register
@@ -190,7 +190,7 @@ Source image:
 
 Regenerate package icon assets:
 ```bash
-# Regenerate icons in app_scaffolding/assets/icons/*
+# Regenerate icons in catu_framework/assets/icons/*
 # (if needed, use your existing icon-generation workflow)
 ```
 
@@ -202,7 +202,7 @@ Apply icons into a target Flutter app:
 
 ## 11. Firebase Authentication + App Check (Example Wiring)
 
-This section shows one practical wiring pattern. Keep `app_scaffolding` framework-agnostic and put Firebase-specific code in your app layer.
+This section shows one practical wiring pattern. Keep `catu_framework` framework-agnostic and put Firebase-specific code in your app layer.
 
 ### Firebase Console Setup
 
@@ -242,7 +242,7 @@ flutter pub get
 Create `lib/auth/firebase_auth_service.dart` in your host app:
 
 ```dart
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
@@ -334,7 +334,7 @@ class FirebaseAuthService implements AuthService {
 ### Wire Firebase Into `main.dart`
 
 ```dart
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -391,7 +391,7 @@ Future<void> main() async {
 - Storage
 5. App Check does not replace Auth. It protects backend resources from non-attested clients.
 
-### Changes Needed in `app_scaffolding`
+### Changes Needed in `catu_framework`
 
 No mandatory core framework code changes are required.
 

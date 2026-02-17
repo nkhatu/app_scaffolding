@@ -112,7 +112,7 @@ class _SignInPageState extends State<SignInPage> {
         children: [
           Image.asset(
             _loginBackgroundAsset,
-            package: 'app_scaffolding',
+            package: 'catu_framework',
             fit: BoxFit.cover,
             errorBuilder: (context, error, stackTrace) {
               return ColoredBox(color: theme.colorScheme.surface);

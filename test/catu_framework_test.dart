@@ -1,7 +1,7 @@
 /// SPDX-License-Identifier: Apache-2.0
 /// Copyright (c) 2026 The Khatu Family Trust
 /// ---------------------------------------------------------------------------
-/// test/app_scaffolding_test.dart
+/// test/catu_framework_test.dart
 /// ---------------------------------------------------------------------------
 ///
 /// Purpose:
@@ -18,7 +18,7 @@ library;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:app_scaffolding/app_scaffolding.dart';
+import 'package:catu_framework/catu_framework.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
