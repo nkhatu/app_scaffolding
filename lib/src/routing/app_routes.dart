@@ -20,6 +20,8 @@ class AppRoutes {
   static const signIn = '/sign-in';
   static const register = '/register';
   static const home = '/';
+  static const profile = '/profile';
+  static const inbox = '/inbox';
   static const settings = '/settings';
   static const support = '/support';
   static const feedback = '/feedback';

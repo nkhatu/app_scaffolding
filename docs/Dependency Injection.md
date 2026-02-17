@@ -74,8 +74,8 @@ void main() {
       dependencies: dependencies,
       config: const AppFrameworkConfig(
         appName: 'Catu Framework',
-        appVersion: '0.1.1',
-        appBuild: '31',
+        appVersion: '0.0.1',
+        appBuild: '1',
         supportEmail: 'support@yourdomain.com',
         copyrightNotice: 'Copyright © 2026 Catu Framework',
       ),

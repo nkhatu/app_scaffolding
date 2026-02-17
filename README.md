@@ -30,6 +30,7 @@ Reusable Flutter framework scaffold based on the architecture used in `catu_fram
 
 - Detailed setup and integration guide: `docs/Catu Framework : How To.md`
 - Dependency injection guide: `docs/Dependency Injection.md`
+- Developer install guide (setup + GitHub download): `docs/Developer Install Guide.md`
 - Firebase auth adapter example: `docs/examples/firebase_auth_service.example.dart`
 
 ## Quick start
@@ -57,8 +58,8 @@ void main() {
       analytics: analytics,
       config: const AppFrameworkConfig(
         appName: 'Catu Framework',
-        appVersion: '0.1.1',
-        appBuild: '31',
+        appVersion: '0.0.1',
+        appBuild: '1',
         supportEmail: 'support@catu.app',
         copyrightNotice: 'Copyright © 2026 Catu Framework',
       ),

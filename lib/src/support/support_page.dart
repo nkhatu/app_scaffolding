@@ -27,6 +27,9 @@ class SupportPage extends StatelessWidget {
     required this.supportEmail,
   });
 
+  static const String _githubRepoUrl =
+      'https://github.com/nkhatu/catu_framework';
+
   final AppState appState;
   final String supportEmail;
 
@@ -41,6 +44,10 @@ class SupportPage extends StatelessWidget {
           Text('Need help?', style: Theme.of(context).textTheme.headlineSmall),
           const SizedBox(height: 12),
           Text('Contact support at: $supportEmail'),
+          const SizedBox(height: 12),
+          const Text('GitHub repository:'),
+          const SizedBox(height: 4),
+          const SelectableText(_githubRepoUrl),
           const SizedBox(height: 12),
           const Text(
             'For production apps, replace this page with your support workflow.',

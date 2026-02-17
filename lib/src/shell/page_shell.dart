@@ -57,29 +57,28 @@ class AppPageShell extends StatelessWidget {
     AppMenuAction action,
   ) async {
     switch (action) {
-      case AppMenuAction.home:
-        Navigator.pushNamedAndRemoveUntil(
-          context,
-          AppRoutes.home,
-          (_) => false,
-        );
+      case AppMenuAction.userProfile:
+        Navigator.pushNamed(context, AppRoutes.profile);
         break;
-      case AppMenuAction.settings:
-        Navigator.pushNamed(context, AppRoutes.settings);
+      case AppMenuAction.inbox:
+        Navigator.pushNamed(context, AppRoutes.inbox);
         break;
       case AppMenuAction.support:
         Navigator.pushNamed(context, AppRoutes.support);
         break;
-      case AppMenuAction.feedback:
-        Navigator.pushNamed(context, AppRoutes.feedback);
-        break;
       case AppMenuAction.privacy:
         Navigator.pushNamed(context, AppRoutes.privacy);
         break;
-      case AppMenuAction.copyright:
+      case AppMenuAction.copyrightAndLicense:
         Navigator.pushNamed(context, AppRoutes.copyright);
         break;
-      case AppMenuAction.signOut:
+      case AppMenuAction.feedback:
+        Navigator.pushNamed(context, AppRoutes.feedback);
+        break;
+      case AppMenuAction.settings:
+        Navigator.pushNamed(context, AppRoutes.settings);
+        break;
+      case AppMenuAction.logout:
         await appState.signOut();
         if (!context.mounted) return;
         Navigator.pushNamedAndRemoveUntil(

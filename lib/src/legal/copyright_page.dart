@@ -27,17 +27,25 @@ class CopyrightPage extends StatelessWidget {
     required this.copyrightNotice,
   });
 
+  static const String _licenseName = 'Apache-2.0';
+
   final AppState appState;
   final String copyrightNotice;
 
   @override
   Widget build(BuildContext context) {
     return AppPageShell(
-      title: 'Copyright',
+      title: 'Copyright & License',
       appState: appState,
-      body: Padding(
+      body: ListView(
         padding: const EdgeInsets.all(16),
-        child: Text(copyrightNotice),
+        children: [
+          Text(copyrightNotice),
+          const SizedBox(height: 12),
+          const Text('License:'),
+          const SizedBox(height: 4),
+          const Text(_licenseName),
+        ],
       ),
     );
   }

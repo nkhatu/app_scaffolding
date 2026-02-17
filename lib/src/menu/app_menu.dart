@@ -18,13 +18,14 @@ library;
 import 'package:flutter/material.dart';
 
 enum AppMenuAction {
-  home,
-  settings,
+  userProfile,
+  inbox,
   support,
-  feedback,
   privacy,
-  copyright,
-  signOut,
+  copyrightAndLicense,
+  feedback,
+  settings,
+  logout,
 }
 
 class AppMenuButton extends StatelessWidget {
@@ -38,14 +39,22 @@ class AppMenuButton extends StatelessWidget {
       icon: const Icon(Icons.menu),
       onSelected: onSelected,
       itemBuilder: (context) => const [
-        PopupMenuItem(value: AppMenuAction.home, child: Text('Home')),
-        PopupMenuItem(value: AppMenuAction.settings, child: Text('Settings')),
-        PopupMenuItem(value: AppMenuAction.support, child: Text('Support')),
-        PopupMenuItem(value: AppMenuAction.feedback, child: Text('Feedback')),
-        PopupMenuItem(value: AppMenuAction.privacy, child: Text('Privacy')),
-        PopupMenuItem(value: AppMenuAction.copyright, child: Text('Copyright')),
+        PopupMenuItem(
+          value: AppMenuAction.userProfile,
+          child: Text('User Profile'),
+        ),
+        PopupMenuItem(value: AppMenuAction.inbox, child: Text('Inbox')),
         PopupMenuDivider(),
-        PopupMenuItem(value: AppMenuAction.signOut, child: Text('Sign out')),
+        PopupMenuItem(value: AppMenuAction.support, child: Text('Support')),
+        PopupMenuItem(value: AppMenuAction.privacy, child: Text('Privacy')),
+        PopupMenuItem(
+          value: AppMenuAction.copyrightAndLicense,
+          child: Text('Copyright & License'),
+        ),
+        PopupMenuDivider(),
+        PopupMenuItem(value: AppMenuAction.feedback, child: Text('Feedback')),
+        PopupMenuItem(value: AppMenuAction.settings, child: Text('Settings')),
+        PopupMenuItem(value: AppMenuAction.logout, child: Text('Logout')),
       ],
     );
   }

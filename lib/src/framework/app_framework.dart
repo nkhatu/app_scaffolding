@@ -26,8 +26,10 @@ import '../bootstrap/bootstrap_page.dart';
 import '../di/app_framework_dependencies.dart';
 import '../feedback/feedback_page.dart';
 import '../home/home_page.dart';
+import '../inbox/inbox_page.dart';
 import '../legal/copyright_page.dart';
 import '../legal/privacy_page.dart';
+import '../profile/user_profile_page.dart';
 import '../routing/app_routes.dart';
 import '../settings/settings_page.dart';
 import '../support/support_page.dart';
@@ -39,7 +41,7 @@ class AppFrameworkConfig {
     required this.appName,
     required this.supportEmail,
     required this.copyrightNotice,
-    this.appVersion = '0.1.0',
+    this.appVersion = '0.0.1',
     this.appBuild = '1',
   });
 
@@ -117,6 +119,8 @@ class _AppFrameworkAppState extends State<AppFrameworkApp> {
           AppRoutes.register: (_) => RegisterPage(appState: _appState),
           AppRoutes.home: (_) =>
               HomePage(appState: _appState, appName: widget.config.appName),
+          AppRoutes.profile: (_) => UserProfilePage(appState: _appState),
+          AppRoutes.inbox: (_) => InboxPage(appState: _appState),
           AppRoutes.settings: (_) => SettingsPage(
             appState: _appState,
             themeController: _themeController,

@@ -36,6 +36,9 @@ class FeedbackPage extends StatefulWidget {
 }
 
 class _FeedbackPageState extends State<FeedbackPage> {
+  static const String _githubRepoUrl =
+      'https://github.com/nkhatu/catu_framework';
+
   final _controller = TextEditingController();
 
   @override
@@ -61,28 +64,35 @@ class _FeedbackPageState extends State<FeedbackPage> {
     return AppPageShell(
       title: 'Feedback',
       appState: widget.appState,
-      body: Padding(
+      body: ListView(
         padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            TextField(
-              controller: _controller,
-              maxLines: 6,
-              decoration: const InputDecoration(
-                labelText: 'Message',
-                border: OutlineInputBorder(),
-              ),
+        children: [
+          Text(
+            'Share your suggestions, issues, or feature requests below.',
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          const SizedBox(height: 12),
+          const Text('GitHub repository:'),
+          const SizedBox(height: 4),
+          const SelectableText(_githubRepoUrl),
+          const SizedBox(height: 16),
+          TextField(
+            controller: _controller,
+            maxLines: 6,
+            decoration: const InputDecoration(
+              labelText: 'Message',
+              border: OutlineInputBorder(),
             ),
-            const SizedBox(height: 12),
-            Align(
-              alignment: Alignment.centerRight,
-              child: FilledButton(
-                onPressed: _submit,
-                child: const Text('Submit'),
-              ),
+          ),
+          const SizedBox(height: 12),
+          Align(
+            alignment: Alignment.centerRight,
+            child: FilledButton(
+              onPressed: _submit,
+              child: const Text('Submit'),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
